@@ -1,6 +1,9 @@
 name: Prettier
 
-on: [pull_request, push]
+on:
+  pull_request:
+    branches:
+      - "*"
 
 jobs:
   prettier:
@@ -9,6 +12,9 @@ jobs:
       pull-requests: write
     steps:
       - uses: actions/checkout@v2
-      - uses: actionsx/prettier@v2
+      - uses: creyD/prettier_action@v4.0
+        name: "chore: prettify files (Pull Request)"
         with:
-          args: --check "./Extensions/*.js" "./jsHelper/{homeConfig,sidebarConfig}.js" "CustomApps/*/*{.js,.css}"
+          prettier_options: --check **/*.{js,css,json} --use-tabs --trailing-comma none --arrow-parens avoid
+          only_changed: true
+        if: ${{ github.event_name == 'pull_request' && github.event_name != 'push' }}
