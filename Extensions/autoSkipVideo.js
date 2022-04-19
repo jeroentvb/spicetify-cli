@@ -1,5 +1,3 @@
-// @ts-check
-
 // NAME: Auto Skip Video
 // AUTHOR: khanhas
 // DESCRIPTION: Auto skip video

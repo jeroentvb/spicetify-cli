@@ -1,5 +1,3 @@
-// @ts-check
-
 // NAME: Christian Spotify
 // AUTHOR: khanhas
 // DESCRIPTION: Auto skip explicit songs. Toggle in Profile menu.

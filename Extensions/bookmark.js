@@ -1,4 +1,3 @@
-// @ts-check
 // NAME: Bookmark
 // AUTHOR: khanhas
 // VERSION: 2.0

@@ -1,5 +1,3 @@
-// @ts-check
-
 // NAME: Shuffle+
 // AUTHOR: khanhas
 // DESCRIPTION: True shuffle with no bias.

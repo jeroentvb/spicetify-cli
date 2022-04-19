@@ -1,4 +1,3 @@
-// @ts-check
 // NAME: Loopy loop
 // AUTHOR: khanhas
 // VERSION: 0.1
