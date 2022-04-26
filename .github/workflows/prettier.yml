@@ -18,6 +18,6 @@ jobs:
       - uses: creyD/prettier_action@v4.0
         name: "prettify files | pull request"
         with:
-          prettier_options: --write **/*.{js,css,json} --use-tabs --trailing-comma none --arrow-parens avoid
+          prettier_options: --write **/*.{js,css,json} --config ./.prettierrc --ignore-path ./.prettierignore
           commit_message: "style: prettify files"
           only_changed: true
